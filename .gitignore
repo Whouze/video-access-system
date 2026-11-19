@@ -1,0 +1,45 @@
+# Local environment and secrets
+.env*
+!.env.example
+/auth.json
+/.aws/
+/.mcp.json
+
+# Dependencies and generated frontend assets
+/vendor/
+/node_modules/
+/public/build/
+/public/hot
+/public/storage
+
+# Runtime data, logs, and caches
+*.log
+/storage/*.key
+/storage/pail
+/bootstrap/cache/*.php
+/database/*.sqlite
+/database/*.sqlite-*
+/.phpunit.cache/
+/.phpunit.result.cache
+
+# Local operating system and editor files
+.DS_Store
+Thumbs.db
+/.idea/
+/.nova/
+/.vscode/
+/.zed/
+/.fleet/
+/.phpactor.json
+/.codex/
+/.claude/
+
+# Local Laravel development files
+/Homestead.json
+/Homestead.yaml
+/_ide_helper.php
+
+# File konfigurasi lokal
+/.claude/
+/.codex/
+/.agents/
