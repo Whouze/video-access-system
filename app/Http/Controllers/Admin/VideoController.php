@@ -32,12 +32,12 @@ class VideoController extends Controller
         $data = $request->validate([
             'judul' => 'required|string|max:255',
             'keterangan' => 'nullable|string',
-            'file_path' => 'required|file|mimes:mp4,mov,avi|max:10240', // max 10MB
+            'file_path' => 'required|file|mimes:mp4,mov,avi|max:102400',
         ], [
             'judul.required' => 'Judul wajib diisi.',
             'file_path.required' => 'File video wajib diunggah.',
             'file_path.mimes' => 'Format file video harus mp4, mov, atau avi.',
-            'file_path.max' => 'Ukuran file video maksimal 10MB.',
+            'file_path.max' => 'Ukuran file video maksimal 100MB.',
         ]);
 
         // Simpan file video ke storage
@@ -63,11 +63,11 @@ class VideoController extends Controller
         $data = $request->validate([
             'judul' => 'required|string|max:255',
             'keterangan' => 'nullable|string',
-            'file_path' => 'nullable|file|mimes:mp4,mov,avi|max:10240', // max 10MB
+            'file_path' => 'nullable|file|mimes:mp4,mov,avi|max:102400',
         ], [
             'judul.required' => 'Judul wajib diisi.',
             'file_path.mimes' => 'Format file video harus mp4, mov, atau avi.',
-            'file_path.max' => 'Ukuran file video maksimal 10MB.',
+            'file_path.max' => 'Ukuran file video maksimal 100MB.',
         ]);
 
         if ($request->hasFile('file_path')) {

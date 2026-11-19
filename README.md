@@ -75,3 +75,5 @@ npm run build
 - **Customer:** menjelajahi video dan mengajukan permintaan akses.
 - **Autentikasi:** pendaftaran, login, reset password, dan pengelolaan password.
 
+Upload video menerima format MP4, MOV, dan AVI dengan ukuran maksimal 100 MB.
+

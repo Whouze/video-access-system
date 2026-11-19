@@ -70,7 +70,7 @@
                     class="mt-1.5 block w-full text-xs text-gray-700 dark:text-gray-300 bg-gray-50 dark:bg-gray-900 border border-gray-300 dark:border-gray-600 rounded-lg cursor-pointer file:mr-3 file:py-2 file:px-3.5 file:border-0 file:text-xs file:font-semibold file:bg-indigo-600 file:text-white hover:file:bg-indigo-500"
                 >
                 <p class="mt-1.5 text-xs text-gray-500 dark:text-gray-400">
-                    Format: MP4, MOV, AVI (Maksimal 10 MB).
+                    Format: MP4, MOV, AVI (Maksimal 100 MB).
                 </p>
                 <x-input-error :messages="$errors->get('file_path')" class="mt-1.5" />
             </div>
